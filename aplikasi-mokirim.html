@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <link rel="stylesheet" href="./styles/style.scss">
+    <title>Aplikasi Mokirim | Mokirim</title>
+</head>
+<body class="mobile-init">
+        <nav>
+                <div class="nav">
+                        <div id="logo">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 25"><path fill-rule="evenodd" clip-rule="evenodd" d="M41.094 21.164h-4.668l1.716-9.916c.605-3.555 2.516-5.2 6.459-5.2 2.274 0 3.798.558 4.571 1.694 1.135-1.136 2.806-1.694 5.054-1.694 1.913 0 3.314.483 4.209 1.476.898.991 1.21 2.224.943 3.724l-1.765 9.916h-4.668l1.645-9.432c.219-1.113-.29-1.668-1.475-1.668s-1.888.555-2.105 1.668l-1.669 9.432h-4.667l1.645-9.432c.218-1.113-.29-1.668-1.501-1.668-1.183 0-1.86.555-2.08 1.668l-1.644 9.432zm29.11-9.19c.242-1.282-.315-1.911-1.645-1.911s-2.13.629-2.37 1.911l-.605 3.482c-.217 1.282.338 1.911 1.668 1.911 1.33 0 2.13-.629 2.349-1.911l.603-3.482zm3.702-4.425c.99.99 1.377 2.224 1.11 3.675l-.87 5.032c-.555 3.022-3.12 5.126-7.498 5.126-2.177 0-3.772-.482-4.765-1.474-.99-.992-1.379-2.202-1.113-3.652l.871-5.032c.556-3.07 3.096-5.176 7.524-5.176 2.152 0 3.724.508 4.74 1.5zm36.102-1.258l-.725 3.773h-1.112c-2.009 0-2.733.556-3.048 2.49l-1.499 8.61h-4.668l1.45-8.367c.461-2.613 1.33-4.402 2.565-5.346 1.232-.943 3.338-1.16 6.337-1.16h.7zm1.798 0h4.668l-2.611 14.874h-4.695l2.638-14.874zm9.461 14.873h-4.668l1.717-9.916c.603-3.555 2.516-5.2 6.456-5.2 2.274 0 3.801.558 4.573 1.694 1.135-1.136 2.804-1.694 5.054-1.694 1.911 0 3.313.483 4.209 1.476.896.991 1.209 2.224.943 3.724l-1.765 9.916h-4.668l1.646-9.432c.216-1.113-.292-1.668-1.478-1.668-1.182 0-1.887.555-2.102 1.668l-1.669 9.432h-4.668l1.645-9.432c.217-1.113-.291-1.668-1.501-1.668-1.184 0-1.862.555-2.079 1.668l-1.645 9.432zm-34.718-7.256s.82.261.983.754l2.125 6.503H84.65l-1.694-5.877.21.725c-.173-.47-.535-.75-1.203-.726h-.529l-1.04 5.878h-4.693l3.29-18.623h4.693L82.11 11.49h.632l-.005-.002c.665 0 1.208-.32 1.48-.722l2.998-4.476h5.102l-4.38 6.63c-.332.511-.77.876-1.388.987zm7.663-7.617h4.667l-2.61 14.874h-4.695L94.212 6.29zM29.56 0H20.05a.508.508 0 00-.499.411L17.853 9.15H15.82L17.482.605a.508.508 0 00-.5-.605H6.55a2.974 2.974 0 00-2.914 2.414L.056 20.839c-.358 1.844 1.046 3.559 2.914 3.559h3.6a.508.508 0 00.5-.411L9.087 13.66h2.033L9.14 23.792a.508.508 0 00.498.605h8.685a.508.508 0 00.5-.41l2.018-10.327h2.033l-1.98 10.132a.508.508 0 00.498.605h4.588a2.974 2.974 0 002.914-2.413l3.579-18.425C32.832 1.714 31.428 0 29.56 0z" fill="#fff"/></svg>
+                        </div>
+                    <div id="nav-mobile" class="nav-mobile nav-mobile-bg">
+                            <div id="nav-icon2">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+                    </div>
+                        <ul class="nav-items">
+                            <li class="nav-item"><a href="#root">Beranda</a></li>
+                            <li class="nav-item"><a href="#layanan">Layanan</a></li>
+                            <li class="nav-item"><a href="#station"></span>Station</a></li>
+                            <li class="nav-item"><a href="/aplikasi-mokirim.html"></span>App</a></li>
+                            <li class="nav-item"><a href="/hubungi-kami.html">Hubungi Kami</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="lk-link">
+                                    <span class="layanan-konsumen">Layanan Konsumen</span>
+                                    <span class="cs-phone">(021) 1234-5678</span>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+        </nav>
+
+    <div id="root">
+        <section>
+                <div class="outer-wrapper-hero rounded-bottom gradient bg-radial">
+                    <div class="wrapper992 dflex hero-center">
+                        <div class="text-wrap">
+                                <span class="hero-subtitle">Layanan Kirim Barang Terjadwal</span>
+                                <h1>Download Aplikasi Mokirim</h1>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="outer-wrapper1152 mt-overlap">
+                <div class="app-mokirim dflex justify-center">
+                    <img class="img50" src="./img/app-mokirim.png" alt="Mokirim">
+                    <div class="badge-wrapper">
+                        <img class="float-badge b-lacak" src="./img/badge-lacak.png" alt="">
+                        <img class="float-badge b-jadwal" src="./img/badge-jadwal.png" alt="">
+                        <img class="float-badge b-biaya" src="./img/badge-biaya.png" alt="">
+                        <img class="float-badge b-koli" src="./img/badge-koli.png" alt="">
+                        <img class="float-badge b-akunbisnis" src="./img/badge-akunbisnis.png" alt="">
+                        <img class="float-badge b-asuransi" src="./img/badge-asuransi.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="wrapper-all" class="wrapper992">
+            <div class="bg-white-rounded-overlap">
+                   <div class="dflex flex-start">
+                    <div class="col50">
+                        <div id="kirim-satukoli" class="layanan-antarstation">
+                            <div class="icon"><img src="./img/antarstation.svg" alt="Antar Station"></div>
+                            <h3>Antar Station</h3>
+                            <span class="subtitle layanan-subtitle">Layanan kirim barang antar station Mokirim</span>
+                            <div class="bodycopy layanan-bodycopy">
+                                <p>Drop barang kiriman di station terdekat dan ambil barang di station tujuan. Lebih mudah, lebih hemat biaya. Pilih tanggal pengirimannya, check-in di lokasi station keberangkatan dan check-out di station tujuan, bayar biaya kirim dan lacak kiriman langsung di aplikasi.</p>
+                            </div>
+                            <ul class="layanan-feat">
+                                <li><img class="icon-small" src="./img/icon/cube.svg" alt="Koli">Single atau Multi Koli</li>
+                                <li><img class="icon-small" src="./img/icon/briefcase.svg" alt="Akun Bisnis">Akun Bisnis</li>
+                                <li><img class="icon-small" src="./img/icon/clock.svg" alt="Jadwal">Jadwal 24/7</li>
+                                <li><img class="icon-small" src="./img/icon/shield.svg" alt="Asuransi">Asuransi Kiriman</li>
+                            </ul>
+                            <div class="cta-kirim">
+                                <a href="#">Ayo Daftar dan Kirim Sekarang <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.414 9.69l1.25 1.31H8a1 1 0 100 2h5.586l-1.293 1.293a.999.999 0 101.414 1.414l3-3a.996.996 0 00.217-1.084c-.025-.06-.068-.109-.104-.162-.033-.05-.053-.107-.096-.152l-2.863-3a1 1 0 00-1.447 1.381zM20 12c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8 8 3.589 8 8zM2 12c0 5.514 4.486 10 10 10s10-4.486 10-10S17.514 2 12 2 2 6.486 2 12z" fill="#FF5A00"/><mask id="a" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.414 9.69l1.25 1.31H8a1 1 0 100 2h5.586l-1.293 1.293a.999.999 0 101.414 1.414l3-3a.996.996 0 00.217-1.084c-.025-.06-.068-.109-.104-.162-.033-.05-.053-.107-.096-.152l-2.863-3a1 1 0 00-1.447 1.381zM20 12c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8 8 3.589 8 8zM2 12c0 5.514 4.486 10 10 10s10-4.486 10-10S17.514 2 12 2 2 6.486 2 12z" fill="#fff"/></mask></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col50 imgwrp">
+                        <img src="./img/1_hemat.jpg" alt="" class="img100">
+                    </div>
+                   </div>
+            </div> 
+        </section> -->
+        
+                <!-- <section id="cta">
+                    <div class="wrapper992">
+                        <div class="mokirim-app-border dflex">
+                            <div class="outer-wrapper1152">
+                                <div class="app-mokirim">
+                                    <img class="img50" src="./img/app-mokirim.png" alt="Mokirim">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </section> -->
+
+    <footer>
+        <div class="footer">
+            <div class="wrapper992 space72 dflex spacebetween">
+                <div class="left-footer">
+                    <ul class="footer-layanan">
+                            <li>Layanan</li>
+                            <li><a href="#">Pengiriman Antar Station</a></li>
+                            <li><a href="#">Pengiriman Single Koli</a></li>
+                            <li><a href="#">Pengiriman Multi Koli</a></li>
+                            <li><a href="#station">Station & Drop Point</a></li>
+                        </ul>
+            
+                        <ul class="footer-perusahaan">
+                            <li>Mokirim</li>
+                            <li><a href="/tentang-kami.html">Tentang Kami</a></li>
+                            <li><a href="#">Bantuan</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                        </ul>
+            </div>
+            <div class="right-footer">
+                <img src="./img/cta-download.svg" alt="Download App Mokirim">
+            </div>
+            
+            </div><!--sjkds-->
+
+            <div class="bottom-footer">
+                <div class="wrapper992 dflex spacebetween">
+                    <div class="bottom-footer-left">
+                        <div class="logo-footer"><img src="./img/mokirim-dark.svg" alt="Mokirim"></div>
+                        <div class="copyright">2019 &copy; PT Mokirim Indonesia. All right reserved.</div>
+                    </div>
+                    <div class="bottom-footer-right">
+                        <div class="ikuti-kami">Ikuti media sosial Mokirim</div>
+                        <ul class="socmed">
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.113 430.114"><path d="M158.081 83.3v59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805s5.601-34.721 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.321-17.354h48.557V.001h-66.021C155.878-.004 158.081 72.48 158.081 83.3z"/></svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 0c-6.5 0-7.3 0-9.9.1-2.6.1-4.3.5-5.8 1.1C6.7 1.8 5.4 2.6 4 4 2.7 5.3 1.8 6.7 1.2 8.3.6 9.8.2 11.6.1 14.1 0 16.7 0 17.5 0 24s0 7.3.1 9.9c.1 2.6.5 4.3 1.1 5.8.6 1.6 1.4 2.9 2.8 4.3 1.3 1.3 2.7 2.2 4.3 2.8 1.5.6 3.3 1 5.8 1.1 2.6.1 3.4.1 9.9.1s7.3 0 9.9-.1c2.6-.1 4.3-.5 5.8-1.1 1.6-.6 2.9-1.4 4.3-2.8 1.3-1.3 2.2-2.7 2.8-4.3.6-1.5 1-3.3 1.1-5.8.1-2.6.1-3.4.1-9.9s0-7.3-.1-9.9c-.1-2.6-.5-4.3-1.1-5.8-.6-1.6-1.4-2.9-2.8-4.3-1.3-1.3-2.7-2.2-4.3-2.8-1.5-.6-3.3-1-5.8-1.1C31.3 0 30.5 0 24 0zm0 4.3c6.4 0 7.2 0 9.7.1 2.3.1 3.6.5 4.5.8 1.1.4 1.9 1 2.8 1.8.8.8 1.4 1.6 1.8 2.8.3.8.7 2.1.8 4.5.1 2.5.1 3.3.1 9.7s0 7.2-.1 9.7c-.1 2.3-.5 3.6-.8 4.5-.4 1.1-1 1.9-1.8 2.8-.8.8-1.6 1.4-2.8 1.8-.8.3-2.1.7-4.5.8-2.5.1-3.3.1-9.7.1s-7.2 0-9.7-.1c-2.3-.1-3.6-.5-4.5-.8-1.1-.4-1.9-1-2.8-1.8-.8-.8-1.4-1.6-1.8-2.8-.3-.8-.7-2.1-.8-4.5-.1-2.5-.1-3.3-.1-9.7s0-7.2.1-9.7c.1-2.3.5-3.6.8-4.5.4-1.1 1-1.9 1.8-2.8.8-.8 1.6-1.4 2.8-1.8.8-.3 2.1-.7 4.5-.8 2.5-.1 3.3-.1 9.7-.1zm0 7.4c-6.8 0-12.3 5.5-12.3 12.3S17.2 36.3 24 36.3 36.3 30.8 36.3 24 30.8 11.7 24 11.7zM24 32c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm15.7-20.8c0 1.6-1.3 2.9-2.9 2.9-1.6 0-2.9-1.3-2.9-2.9s1.3-2.9 2.9-2.9 2.9 1.3 2.9 2.9z"/></svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.117 430.117"><path d="M430.117 261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477V420.56h-92.219s1.242-251.285 0-277.32h92.21v39.309c-.187.294-.43.611-.606.896h.606v-.896c12.251-18.869 34.13-45.824 83.102-45.824 60.673-.001 106.157 39.636 106.157 124.818zM52.183 9.558C20.635 9.558 0 30.251 0 57.463c0 26.619 20.038 47.94 50.959 47.94h.616c32.159 0 52.159-21.317 52.159-47.94-.606-27.212-20-47.905-51.551-47.905zM5.477 420.56h92.184V143.24H5.477v277.32z"/></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-bottom gradient"></div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

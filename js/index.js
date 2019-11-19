@@ -8,20 +8,37 @@ var headroom  = new Headroom(theNav);
 headroom.init();
 
 
-const mobileMenu = $("#nav-mobile");
+const mobileMenu = $("#nav-mobile-normal");
 const mobileMenuItems = $("ul.nav-items");
 const linkItem = $(".nav-item a")
 mobileMenu.click(function(){
    mobileMenuItems.toggleClass("show-menu");
    $(".mobile-init").toggleClass("lock-body");
-   $("nav").toggleClass("bg-primary");
+   $(".nav-normal").toggleClass("bg-primary");
    $("#nav-icon2").toggleClass('open');
 });
 
 linkItem.click(function(){
   mobileMenuItems.removeClass("show-menu");
    $(".mobile-init").removeClass("lock-body");
-   $("nav").removeClass("bg-primary");
+   $(".nav-normal").removeClass("bg-primary");
+   $("#nav-icon2").removeClass('open');
+});
+
+const mobileMenuCompany = $("#nav-mobile-company");
+const mobileMenuCompanyItems = $("ul.nav-items");
+const linkItemCompany = $(".nav-item a")
+mobileMenuCompany.click(function(){
+  mobileMenuCompanyItems.toggleClass("show-menu");
+   $(".mobile-init").toggleClass("lock-body");
+   $(".nav-invert").toggleClass("bg-white");
+   $("#nav-icon2").toggleClass('open');
+});
+
+linkItemCompany.click(function(){
+  mobileMenuCompanyItems.removeClass("show-menu");
+   $(".mobile-init").removeClass("lock-body");
+   $(".nav-invert").removeClass("bg-white");
    $("#nav-icon2").removeClass('open');
 });
 

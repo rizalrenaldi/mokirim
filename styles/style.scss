@@ -136,6 +136,19 @@ img {
     position: relative;
 }
 
+.wrapper992-company {
+    width: 100%;
+    height: auto;
+    max-width: 992px;
+    padding: 0 16px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0;
+    }
+}
+
 .outer-wrapper1152 {
     width: 100%;
     height: auto;
@@ -152,7 +165,7 @@ img {
     border-radius: 24px 24px 0 0;
 
     @media screen and (max-width: 534px) {
-        margin-top: -10px;
+        margin-top: -60px;
     }
 }
 
@@ -290,16 +303,16 @@ img {
     }
     .nav-invert.headroom--pinned {
         transform: translateY(0%);
-        background-color:#ffffff!important;
+        background-color:#ffffff;
     }
     .nav-invert.headroom--unpinned {
         transform: translateY(-100%);
     }
     .nav-invert.headroom--not-top {
-        background-color: #ffffff!important;
+        background-color: #ffffff;
     }
     .nav-invert.headroom--top {
-        background-color: transparent!important;
+        background-color: transparent;
     }
     .nav-invert.headroom--not-top.headroom--not-bottom {
         transform: translateY(-100%);
@@ -357,6 +370,10 @@ img {
 
 .bg-primary {
     background-color: var(--brand-primary);
+}
+
+.bg-white {
+    background-color: #ffffff!important;
 }
 
 nav {
@@ -693,10 +710,12 @@ nav.nav-invert {
 
 .float-badge {
     width: 25%;
+    height: auto;
     position: absolute;
 
     @media screen and (max-width: 1000px) {
         position: relative;
+        height: 100%;
     }
 }
 
@@ -743,7 +762,6 @@ nav.nav-invert {
 }
 
 .badge-wrapper {
-
     @media screen and (max-width: 1000px) {
         width: 100%;
         display: flex;
@@ -755,6 +773,12 @@ nav.nav-invert {
 .text-wrap {
     width: 100%;
     text-align: center;
+
+    h1 {
+        @media screen and (max-width: 640px) {
+            font-size: 2.5rem;
+        } 
+    }
 }
 
 .push-top {
@@ -847,7 +871,7 @@ section#hero {
         @media screen and (max-width: 1000px) {
             width: 100%;
             height: 100%;
-            padding-top: 68px;
+            padding-top: 120px;
             justify-content: flex-start;
         }
 
@@ -860,9 +884,10 @@ section#hero {
 
             @media screen and (max-width: 1000px) {
                 height: auto;
+                min-height: 100%;
                 justify-content: center;
                 text-align: center;
-                margin-top: 56px;
+                // margin-top: 56px;
             }
         }
     }
@@ -1512,12 +1537,18 @@ footer {
         @media screen and (max-width: 1000px) {
             width: 100%;
             max-width: 500px;
-            padding: 0 5%;
+            // padding: 0 5%;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
         }
 
         ul {
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                margin: 16px 0;
+                text-align: center;
+            }
             li {
                 line-height: 1.8;
 
@@ -1538,6 +1569,9 @@ footer {
 
         ul.footer-layanan {
             margin-right: 80px;
+            @media screen and (max-width: 1000px) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -1702,9 +1736,14 @@ footer {
         }
     
         svg {
-            width: 240px;
+            width: 400px;
             height: auto;
-            margin: 24px 0;
+            margin: 0 0 48px 0;
+
+            @media screen and (max-width: 1000px) {
+                width: 80%;
+                height: auto;
+            }
         }
     }
 }
@@ -1854,6 +1893,20 @@ footer {
     img {
         width: 100%;
         margin: 16px 0;
+    }
+}
+
+.margin-mobile {
+    @media screen and (max-width: 1000px) {
+        padding: 32px 16px!important;
+    }
+}
+
+.company-title {
+    h1 {
+        @media screen and (max-width: 1000px) {
+            font-size: 2rem;
+        }
     }
 }
 

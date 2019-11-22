@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../.node/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"styles/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../img/bghero.svg":[["bghero.e5a71124.svg","img/bghero.svg"],"img/bghero.svg"],"/Users/rizal/Documents/_code/mokirim/img/radial.svg":[["radial.0d76dc58.svg","img/radial.svg"],"img/radial.svg"],"./../img/chevron.svg":[["chevron.54d713ca.svg","img/chevron.svg"],"img/chevron.svg"],"/Users/rizal/Documents/_code/mokirim/img/bg-illustrasi.png":[["bg-illustrasi.2dcc728d.png","img/bg-illustrasi.png"],"img/bg-illustrasi.png"],"_css_loader":"../../../.node/lib/node_modules/parcel/src/builtins/css-loader.js"}],"../../../.node/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../.node/lib/node_modules/parcel/src/builtins/bundle-url.js"}],"../../../.node/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../.node/lib/node_modules/parcel/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.ff1c4cab.js.map
+//# sourceMappingURL=/email-checkout-reminder.js.map

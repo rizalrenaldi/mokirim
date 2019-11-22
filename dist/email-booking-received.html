@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <title>Booking Pengiriman Anda</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>/* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }</style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>/* What it does: Hover styles for buttons */
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+
+	    /* Media Queries */
+	     @media screen and (max-width: 600px) {
+            .email-container p {
+	            font-size: 14px !important;
+	        }
+
+            .mkrlogo22308 {
+                width: 120px;
+            }
+
+            h1 {
+                margin: 0 0 10px 0!important;
+            }
+        }</style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #F4F6F8;">
+	<center style="width: 100%; background-color: #F4F6F8;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F4F6F8;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+        -->
+        <div style="max-width: 600px; margin: 0 auto;padding: 24px 0 0 0" class="email-container">
+            <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+            <tr>
+            <td>
+            <![endif]-->
+
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;border-top: 5px solid #FF5A00;">
+                <tr>
+                    <td style="background-color: #ffffff;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr style="border-bottom: 1px solid #DFE3E8;">
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <img class="mkrlogo22308" src="/logo.a8b7bf05.png" width="200" height="50" alt="Mokirim" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 15px; float: left; color: #555555;">
+                                    <h1 style="margin: 16px 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 30px; color: #637381; font-weight: normal; float:right;">Booking Pengiriman Anda</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 18px; line-height: 30px; font-weight: bold;color: #222B45; ">Halo [user],</h1>
+                                    <p style="margin: 0;color: #222B45; ">Mohon lakukan pembayaran sebelum batas waktu yang ditentukan untuk menghindari pembatalan otomatis.</p>
+                                    <p style="margin: 16px 0 0 0;color: #222B45; ">Berikut detail booking pengiriman Anda:</p>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr>
+                        <td style="padding: 0 10px 16px 10px; background-color: #ffffff;">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr style="border: 1px solid #C4CDD5;">
+                                        <td style="font-family: sans-serif; text-align: left; padding: 0;">
+                                            <p style="margin: 0;color: #fff;padding: 12px 0 8px 8px; background-color:#FF5A00;"><strong>Detail Booking & Pembayaran</strong></p>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td valign="top" width="100%" style="border: 1px solid #DFE3E8;background-color: #F9FAFB;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-size: 14px;font-family: sans-serif; text-align: left; padding: 0;line-height: 16px;">
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Status Pembayaran: <span style="float:right;color: #FF5A00;"><strong>Pending - Menunggu Pembayaran</strong></span></p>
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Nomor Booking: <span style="float:right;"><strong>#123456</strong></span></p>
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Tanggal Booking: <span style="float:right;"><strong>Jum, 28 Des 2019 - 11:00</strong></span></p>
+                                                    
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Biaya yang harus dibayar: <span style="float:right;color: #FF5A00;"><strong>Rp 200.000</strong></span></p>
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Bank Rekening Virtual: <span style="float:right;color: #FF5A00;"><strong>Bank BCA</strong></span></p>
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Nomor Rekening Virtual: <span style="float:right;color: #FF5A00;"><strong>00123456789</strong></span></p>
+                                                    <p style="margin: 8px 0 4px 0;color: #637381;border-bottom:1px solid #DFE3E8;padding: 0 12px 12px 12px;">Batas Waktu Transfer: <span style="float:right;color: #637381;"><strong>10:00</strong></span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #637381; padding: 8px 10px;">
+                                                   <p style="font-size: 13px; margin: 0;"><strong>Konfirmasi pembayaran akan dilakukan secara otomatis oleh sistem.</strong></p>
+                                                   <p style="font-size: 13px; margin: 0;">Jika sudah membayar tapi status pembayaran masih pending, Mohon lakukan konfirmasi pembayaran manual di aplikasi Mokirim Anda.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Two Even Columns : END -->
+
+
+                
+                <!-- Detail Kiriman Single -->
+                <tr>
+                        <td style="padding: 0 10px 40px 10px; background-color: #ffffff;">
+                            <p style="font-family: sans-serif;margin: 16px 0 0 0;color: #222B45;padding: 0 0 8px 8px;"><strong>Ringkasan Pengiriman Anda</strong></p>
+                            <h1 style="margin: 0 0 8px 8px; font-family: sans-serif; font-size: 24px; color: #FF5A00; font-weight: normal;"><strong>TABTUR1-11</strong></h1>
+    
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            
+                                            <tr style="border-top: 1px solid #C4CDD5;">
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0;">
+                                                    <p style="margin: 0;color: #222B45;border-bottom:1px solid #C4CDD5;padding: 12px 0 8px 8px; background-color:#F4F6F8;"><strong>Asal</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0 10px 16px;">
+                                                    <!-- <p style="margin: 16px 0 0 0;color: #222B45;border-bottom:1px solid #DFE3E8;padding: 0 0 8px 0;"><strong>TABTUR22-19</strong></p> -->
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Station Asal</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Tanah Abang, Jakarta Pusat (J1)</p>
+                                                    <p style="font-size: 12px;margin: 8px 0 0 0;color: #919EAB; "><a href="#" style="color: #FF5A00;">Lihat Peta Lokasi Station</a></p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Berangkat</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Sen, 1 Jan 2020</p>
+                                                    <p style="margin: 4px 0 0 0;color: #222B45; ">Jam 11:00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr style="border-top: 1px solid #C4CDD5;">
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0;">
+                                                    <p style="margin: 0;color: #222B45;border-bottom:1px solid #C4CDD5;padding: 12px 0 8px 8px; background-color:#F4F6F8;"><strong>Tujuan</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0 10px;">
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Station Tujuan</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Pasar Turi, Surabaya (S1)</p>
+                                                    <p style="font-size: 12px;margin: 8px 0 0 0;color: #919EAB; "><a href="#" style="color: #FF5A00;">Lihat Peta Lokasi Station</a></p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Estimasi Tiba</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Rabu, 3 Jan 2020</p>
+                                                    <p style="margin: 4px 0 0 0;color: #222B45; ">Jam 19:00</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0 10px;">
+                                                    <p style="margin: 16px 0 0 0;color: #FF5A00;border-bottom:1px solid #DFE3E8;padding: 0 0 8px 0;"><strong>Check In Maksimal</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 16px 10px;">
+                                                    <p style="margin: 0;color: #FF5A00;padding: 0 0 8px 0;"><strong>Sen, 1 jan 2020</strong></p>
+                                                    <p style="margin: 0;color: #FF5A00;padding: 0 0 8px 0;"><strong>Jam 10:00</strong></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="text-align: center; padding: 0 10px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
+                                                        <img src="/info.6412f49c.png" alt="info" style="width:16px;height:auto;">
+                                                    <p style="color: #637381;font-size: 13px;margin: 8px 0 16px 0;">Kode Check-In akan dirilis setelah pembayaran terkonfirmasi.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+    
+    
+                                <tr>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr style="border-top: 1px solid #C4CDD5;">
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0;">
+                                                    <p style="margin: 0;color: #222B45;border-bottom:1px solid #C4CDD5;padding: 12px 0 8px 8px; background-color:#F4F6F8;"><strong>Detail Kiriman</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0 10px 24px 10px;">
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Jenis Pengiriman</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Antar Station</p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Isi Kiriman</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">Bahan Pakaian</p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Jumlah Koli</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">1 Koli</p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Total Berat</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">20 Kg</p>
+                                                    <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Total Dimensi</p>
+                                                    <p style="margin: 8px 0 0 0;color: #222B45; ">10 m³</p>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="top" width="50%" style="border: 1px solid #DFE3E8;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            
+                                            <tr style="border-top: 1px solid #C4CDD5;">
+                                                <td style="font-family: sans-serif; text-align: left; padding: 0;">
+                                                    <p style="margin: 0;color: #222B45;border-bottom:1px solid #C4CDD5;padding: 12px 0 8px 8px; background-color:#F4F6F8;"><strong>Rincian Biaya</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                    <td style="font-family: sans-serif; text-align: left; padding: 0 10px 24px 10px;">
+                                                        <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Biaya Per Kg</p>
+                                                        <p style="margin: 8px 0 0 0;color: #222B45; ">Rp 10.000</p>
+                                                        <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Biaya</p>
+                                                        <p style="margin: 8px 0 0 0;color: #222B45; ">Rp 10.000 x 20 Kg</p>
+                                                        <p style="font-size: 12px;margin: 16px 0 0 0;color: #919EAB; ">Total Biaya</p>
+                                                        <p style="font-size: 22px;margin: 4px 0 0 0;color: #FF5A00;"><strong>Rp 200.000</strong></p>
+                                                        
+                                                        
+                                                    </td>
+                                                </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Detail Kiriman Single : END -->    
+    
+    
+    
+                
+
+                <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+
+                <!-- 1 Column Text : BEGIN -->
+                <tr>
+                    <td style="background-color: #ffffff;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <p style="margin: 0; text-align:center; font-weight: 800;color: #222B45;">Butuh bantuan? <a href="https://mokirim.com/bantuan" style="text-decoration: underline; color:#FF5A00;">Buka menu Bantuan di aplikasi Mokirim Anda</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- 1 Column Text : END -->
+
+            </table>
+            <!-- Email Body : END -->
+
+            <!-- Email Footer : BEGIN -->
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                <tr>
+                    <td style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
+                        <!-- <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">Lihat di laman web</webversion> -->
+                        <img src="/logo.a8b7bf05.png" width="80" height="" alt="alt_text" border="0" style="width: 100%; max-width: 120px;">
+                        <br><br>
+						<span style="font-weight: bold;">PT Mokirim Indonesia</span><br><span class="unstyle-auto-detected-links">www.mokirim.com<br>2020 &copy; Hak cipta dilindungi undang-undang.</span>
+                        <br><br>
+                        <!-- <unsubscribe style="color: #888888; text-decoration: underline;">unsubscribe</unsubscribe> -->
+                    </td>
+                </tr>
+            </table>
+            <!-- Email Footer : END -->
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+
+        <!-- Full Bleed Background Section : BEGIN -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #FF5A00;">
+            <tr>
+                <td>
+                    <div align="center" style="max-width: 600px; margin: auto;" class="email-container">
+                        <!--[if mso]>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                        <tr>
+                        <td>
+                        <![endif]-->
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px; text-align: center; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
+                                    <p style="margin: 0;vertical-align: middle;">
+                                            <span style="margin: 0 16px 0 0;">Ikuti kami untuk kabar terbaru dan promo:</span>
+                                        <a href="#"><img src="/fb.2af4828a.png" style="width: 24px;" alt="facebook"></a>
+                                        <a href="#"><img src="/ig.cf633242.png" style="width: 24px;" alt="Instagram"></a>
+                                        <a href="#"><img src="/in.d5aeba30.png" style="width: 24px;" alt="LinkedIn"></a>
+                                    </p>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- Full Bleed Background Section : END -->
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>
